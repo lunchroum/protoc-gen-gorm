@@ -890,7 +890,6 @@ func (b *ORMBuilder) parseBasicFields(msg *protogen.Message, g *protogen.Generat
 		tag := gormOptions.Tag
 		fieldName := camelCase(string(fd.Name()))
 		fieldType := fd.Kind().String()
-
 		var typePackage string
 
 		if b.dbEngine == ENGINE_POSTGRES && b.IsAbleToMakePQArray(fieldType) && field.Desc.IsList() {
@@ -998,6 +997,9 @@ func (b *ORMBuilder) parseBasicFields(msg *protogen.Message, g *protogen.Generat
 		}
 
 		switch fieldType {
+		case "bytes":
+			fieldType = "[]byte"
+			gormOptions.Tag = tagWithType(tag, "bytea")
 		case "float":
 			fieldType = "float32"
 		case "double":
