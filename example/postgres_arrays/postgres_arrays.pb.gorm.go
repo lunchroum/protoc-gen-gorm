@@ -6,9 +6,9 @@ package postgres_arrays
 import (
 	context "context"
 	fmt "fmt"
-	gateway "github.com/infobloxopen/atlas-app-toolkit/gateway"
-	errors "github.com/lunchroum/protoc-gen-gorm/errors"
 	pq "github.com/lib/pq"
+	gateway "github.com/lunchroum/atlas-app-toolkit/gateway"
+	errors "github.com/lunchroum/protoc-gen-gorm/errors"
 	field_mask "google.golang.org/genproto/protobuf/field_mask"
 	gorm "gorm.io/gorm"
 )

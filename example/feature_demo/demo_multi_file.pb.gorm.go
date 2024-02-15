@@ -6,7 +6,7 @@ package example
 import (
 	context "context"
 	fmt "fmt"
-	gateway "github.com/infobloxopen/atlas-app-toolkit/gateway"
+	gateway "github.com/lunchroum/atlas-app-toolkit/gateway"
 	errors "github.com/lunchroum/protoc-gen-gorm/errors"
 	go_uuid "github.com/satori/go.uuid"
 	field_mask "google.golang.org/genproto/protobuf/field_mask"
