@@ -8,7 +8,7 @@ import "google/protobuf/timestamp.proto";
 import "atlas/resource/v1/resource.proto";
 import "options/gorm.proto";
 
-option go_package = "github.com/infobloxopen/protoc-gen-gorm/example/user;user";
+option go_package = "github.com/lunchroum/protoc-gen-gorm/example/user;user";
 
 message User {
     option (gorm.opts) = {
@@ -30,7 +30,12 @@ message User {
     repeated Language languages = 12 [(gorm.field).many_to_many = {}];
     repeated User friends = 13 [(gorm.field).many_to_many = {}];
     atlas.rpc.Identifier shipping_address_id = 14;
-    atlas.rpc.Identifier external_uuid = 15 [(gorm.field).tag = {type: "uuid"}];
+    atlas.rpc.Identifier external_uuid = 15 [
+        (gorm.field).tag = {
+            type: "uuid"
+            index: ["external_uuid_idx","external_idx"]
+        }
+    ];
     Department department = 16;
 }
 
