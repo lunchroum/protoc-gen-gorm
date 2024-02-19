@@ -33,16 +33,15 @@ var (
 )
 
 var (
-	gormImport   = "gorm.io/gorm"
-	tkgormImport = "github.com/lunchroum/atlas-app-toolkit/v2/gorm"
-	uuidImport   = "github.com/satori/go.uuid"
-	authImport   = "github.com/lunchroum/atlas-app-toolkit/auth"
-	// gormpqImport       = "github.com/jinzhu/gorm/dialects/postgres"
+	gormImport         = "gorm.io/gorm"
+	tkgormImport       = "github.com/lunchroum/atlas-app-toolkit/v2/gorm"
+	uuidImport         = "github.com/satori/go.uuid"
+	authImport         = "github.com/lunchroum/atlas-app-toolkit/v2/auth"
 	gtypesImport       = "github.com/lunchroum/protoc-gen-gorm/types"
 	resourceImport     = "github.com/lunchroum/atlas-app-toolkit/v2/gorm/resource"
-	queryImport        = "github.com/lunchroum/atlas-app-toolkit/query"
+	queryImport        = "github.com/lunchroum/atlas-app-toolkit/v2/query"
 	ocTraceImport      = "go.opencensus.io/trace"
-	gatewayImport      = "github.com/lunchroum/atlas-app-toolkit/gateway"
+	gatewayImport      = "github.com/lunchroum/atlas-app-toolkit/v2/gateway"
 	pqImport           = "github.com/lib/pq"
 	gerrorsImport      = "github.com/lunchroum/protoc-gen-gorm/errors"
 	timestampImport    = "google.golang.org/protobuf/types/known/timestamppb"

@@ -7,7 +7,7 @@ import (
 	context "context"
 	fmt "fmt"
 	pq "github.com/lib/pq"
-	gateway "github.com/lunchroum/atlas-app-toolkit/gateway"
+	gateway "github.com/lunchroum/atlas-app-toolkit/v2/gateway"
 	errors "github.com/lunchroum/protoc-gen-gorm/errors"
 	field_mask "google.golang.org/genproto/protobuf/field_mask"
 	gorm "gorm.io/gorm"

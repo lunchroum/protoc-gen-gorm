@@ -6,8 +6,8 @@ package user
 import (
 	context "context"
 	fmt "fmt"
-	auth "github.com/lunchroum/atlas-app-toolkit/auth"
-	gateway "github.com/lunchroum/atlas-app-toolkit/gateway"
+	auth "github.com/lunchroum/atlas-app-toolkit/v2/auth"
+	gateway "github.com/lunchroum/atlas-app-toolkit/v2/gateway"
 	gorm1 "github.com/lunchroum/atlas-app-toolkit/v2/gorm"
 	resource "github.com/lunchroum/atlas-app-toolkit/v2/gorm/resource"
 	errors "github.com/lunchroum/protoc-gen-gorm/errors"
